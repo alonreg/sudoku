@@ -229,7 +229,19 @@
       </table>
 
     </div>
-    <form action="https://docs.google.com/forms/u/0/">
+    
+    <script>
+    function random(){
+    num = Math.floor(Math.random() * 10);
+      if(num % 2 == 0){
+      document.getElementById("sub").action = "https://alonreg.github.io/sudoku/results";
+      } else {
+        document.getElementById("sub").action = "google.com";
+      }
+    }
+    </script>
+
+    <form id="sub" action="random()">
       <input type="submit" value="OK" />
     </form>
     </center>
