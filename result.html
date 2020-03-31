@@ -31,27 +31,30 @@
 }
 </style>
 <body>
+<center>
 <div id="myDiv" class="loader"></div>
-<h1>טבלה נכשלת</h1>
+<h1 id="myText">טבלה נכשלת</h1>
 
 <script type="text/javascript">
 
   (function(){
     var myDiv = document.getElementById("myDiv"),
-
+    var myText = document.getElementById("myText"),
       show = function(){
         myDiv.style.display = "block";
+        myText.style.display = "none";
         setTimeout(hide, 2000); // 5 seconds
       },
 
       hide = function(){
         myDiv.style.display = "none";
+        myText.style.display = "block";
       };
 
     show();
   })();
 
 </script>
-
+  </center>
 </body>
 </html>
