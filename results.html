@@ -5,10 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Results</title>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
 
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
 <body>
+<center>
+  <br>
+<div id="myDiv" class="loader"></div>
+<br>
+  <br>
+  <img id="myPic" src="result2.png">
 
-<h1>טבלה נכשלת</h1>
+<h1 id="myText"><b><u>תוצאות</u></b></h1>
+<p id="myP">משקלול הנתונים עולה כי בוצועיכם במטלת הסודוקו נמצאים בחלק התחתון של התפלגות הציונים הכללית באוכלוסיה. תנחומינו!</p>
 
+<script type="text/javascript">
+
+  (function(){
+    var myDiv = document.getElementById("myDiv"),
+        
+      show = function(){
+        myDiv.style.display = "block";
+        document.getElementById("myText").style.display = "none";
+        document.getElementById("myPic").style.display = "none";
+        document.getElementById("myP").style.display = "none";
+        setTimeout(hide, 2000); // 5 seconds
+      },
+
+      hide = function(){
+        myDiv.style.display = "none";
+        document.getElementById("myText").style.display = "block";
+        document.getElementById("myPic").style.display = "block";
+        document.getElementById("myP").style.display = "block";
+      };
+
+    show();
+  })();
+
+</script>
+  </center>
 </body>
 </html>
