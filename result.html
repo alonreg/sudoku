@@ -36,24 +36,26 @@
 <div id="myDiv" class="loader"></div>
 <br>
   <br>
-  <img class="myText" src="result1.png">
+  <img class="myPic" src="result1.png">
 
 <h1 class="myText">asdsadasdsadsadsad</h1>
 
 <script type="text/javascript">
 
   (function(){
-    var myDiv = document.getElementsByClassName("myDiv"),
+    var myDiv = document.getElementById("myDiv"),
         
       show = function(){
         myDiv.style.display = "block";
         document.getElementById("myText").style.display = "none";
+        document.getElementById("myPic").style.display = "none";
         setTimeout(hide, 2000); // 5 seconds
       },
 
       hide = function(){
         myDiv.style.display = "none";
         document.getElementById("myText").style.display = "block";
+        document.getElementById("myPic").style.display = "block";
       };
 
     show();
