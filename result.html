@@ -38,7 +38,8 @@
   <br>
   <img id="myPic" src="result1.png">
 
-<h1 id="myText">asdsadasdsadsadsad</h1>
+<h1 id="myText"><b><u>תוצאות</u></b></h1>
+<p id="myP">של התפלגות הציונים הכללית באוכלוסייה (HIGH PERFORMERS).<b>בחלק העליון <b/>משקלול הנתונים עולה כי ביצועיכם במטלת הסודוקו נמצאים <p>
 
 <script type="text/javascript">
 
@@ -49,6 +50,7 @@
         myDiv.style.display = "block";
         document.getElementById("myText").style.display = "none";
         document.getElementById("myPic").style.display = "none";
+        document.getElementById("myP").style.display = "none";
         setTimeout(hide, 2000); // 5 seconds
       },
 
@@ -56,6 +58,7 @@
         myDiv.style.display = "none";
         document.getElementById("myText").style.display = "block";
         document.getElementById("myPic").style.display = "block";
+        document.getElementById("myP").style.display = "block";
       };
 
     show();
