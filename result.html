@@ -39,8 +39,8 @@
   <img id="myPic" src="result1.png">
 
 <h1 id="myText"><b><u>תוצאות</u></b></h1>
-<p id="myP"><font size="6">משקלול הנתונים עולה כי ביצועיכם במטלת הסודוקו נמצאים בחלק העליון של התפלגות הציונים הכללית באוכלוסייה (גבוהים מתוצאות מרבית המשתתפים)</font></p>
-<br><p id="myD"><font size="4">אנא סגרו את החלון ועקבו אחר ההוראות בחלק הבא</font></p>
+<p id="myP"><font size="5">משקלול הנתונים עולה כי ביצועיכם במטלת הסודוקו נמצאים בחלק העליון של התפלגות הציונים הכללית באוכלוסייה (גבוהים מתוצאות מרבית המשתתפים)</font></p>
+<br><p id="myD"><font size="5">אנא סגרו את החלון ועקבו אחר ההוראות בחלק הבא</font></p>
 
 <script type="text/javascript">
 
@@ -52,6 +52,7 @@
         document.getElementById("myText").style.display = "none";
         document.getElementById("myPic").style.display = "none";
         document.getElementById("myP").style.display = "none";
+        document.getElementById("myD").style.display = "none";
         setTimeout(hide, 2000); // 5 seconds
       },
 
@@ -59,7 +60,7 @@
         myDiv.style.display = "none";
         document.getElementById("myText").style.display = "block";
         document.getElementById("myPic").style.display = "block";
-        document.getElementById("myP").style.display = "block";
+        document.getElementById("myD").style.display = "block";
       };
 
     show();
